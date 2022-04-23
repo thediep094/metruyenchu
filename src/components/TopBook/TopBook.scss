@@ -1,0 +1,152 @@
+.TopBook {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .TopBook__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 31.5%;
+        box-shadow: 0 10px 25px 0 #d7d4ce;
+        border-radius: 10px;
+
+        &:hover {
+            .TopBook__header {
+                .TopBook__header__link {
+                    display: block;
+                }
+            }
+        }
+
+        .TopBook__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .TopBook__title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 1.2;
+                padding-bottom: 10px;
+                padding: 0 20px;
+            }
+
+            .TopBook__header__link {
+                text-decoration: none;
+                color: #b78a28;
+                font-size: 1rem;
+                display: none;
+                margin-right: 10px;
+            }
+        }
+
+        .TopBook__content {
+            display: flex;
+            flex-direction: column;
+
+            .TopBook__content__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+
+                .TopBook__content__item__rank {
+                    padding: 5px;
+                    text-align: center;
+                    align-items: center;
+                }
+
+                .TopBook__item__content {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 300px;
+                    border-bottom: 1px solid rgb(206, 206, 206, .5);
+                    padding: 10px 0;
+
+                    .TopBook__item__left {
+                        h1 {
+                            font-size: .9375rem;
+                            font-weight: 500;
+                            padding: 5px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #b78a28;
+                            }
+                        }
+
+                        p {
+                            color: #088860;
+                            font-size: .9rem;
+                            padding: 5px;
+                        }
+
+                        .TopBook__item__left__actor {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .TopBook__item__left__actor__icon {
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin-right: 5px;
+                                color: rgb(117, 116, 116);
+                            }
+
+                            p {
+                                color: #333;
+                            }
+                        }
+
+                        .TopBook__item__left__tag {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .TopBook__item__left__tag__icon {
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin-right: 5px;
+                                color: rgb(117, 116, 116);
+                            }
+
+                            p {
+                                color: #333;
+                            }
+                        }
+                    }
+
+                    .TopBook__item__right {
+                        display: flex;
+                        flex-direction: row;
+
+
+                        img {
+                            width: 70px;
+                            height: 105px;
+                            outline: 1px solid transparent;
+                            cursor: pointer;
+                        }
+
+                        p {
+                            color: #088860;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
